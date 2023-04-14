@@ -7,6 +7,7 @@ import { CollectionComponent } from './collection/collection.component';
 import { QuizFormComponent } from './quiz-form/quiz-form.component';
 import { AnimalFactComponent } from './animal-fact/animal-fact.component';
 import { PlantFactComponent } from './plant-fact/plant-fact.component';
+import { WeeklyPhotoComponent } from './weekly-photo/weekly-photo.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PlantFactComponent } from './plant-fact/plant-fact.component';
     CollectionComponent,
     QuizFormComponent,
     AnimalFactComponent,
-    PlantFactComponent
+    PlantFactComponent,
+    WeeklyPhotoComponent
   ],
   imports: [
     BrowserModule
