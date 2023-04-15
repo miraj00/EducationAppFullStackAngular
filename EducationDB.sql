@@ -1,3 +1,8 @@
+DROP database EducationDB;
+CREATE DATABASE EducationDB;
+
+DROP table `animals`;
+
 CREATE TABLE `animals` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `name` varchar(300) DEFAULT NULL,
