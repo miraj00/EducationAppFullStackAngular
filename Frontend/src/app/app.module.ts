@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
@@ -15,13 +15,27 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotesComponent } from './notes/notes.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
+import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
-  {path:"login", component: LoginComponent},
   {path:"", component: HomeComponent},
-  
+  {path:"login", component: LoginComponent},
+  {path:"animals", component: AnimalFactComponent},
+  {path:"plants", component: PlantFactComponent},
+  {path:"quiz", component: QuizFormComponent},
+  {path:"calculator", component: CalculatorComponent},
+  {path:"notes", component: NotesComponent},
+  {path:"calculator", component: CalculatorComponent},
+  {path:"image", component: WeeklyPhotoComponent},
+  {path:"contact", component: ContactComponent},
 
 ]
 
@@ -37,18 +51,26 @@ const routes: Routes = [
     LoginComponent,
     HeaderComponent,
     FooterComponent,
-    NotesComponent
+    NotesComponent,
+    NavbarComponent,
+    CalculatorComponent,
+    ContactComponent
   ],
 
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    [RouterModule.forRoot(routes)]
+    [RouterModule.forRoot(routes)],
+    CommonModule,
+    MatButtonModule,
+    BrowserAnimationsModule,
+   
   ],
-  exports: [ RouterModule ],
 
+  exports: [ RouterModule,  MatButtonModule ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
