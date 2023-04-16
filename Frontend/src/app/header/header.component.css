@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 20px;
+    background-color: #000101;
+    
+  }
+  
+
+  a {
+    margin-left: .75em;
+  }
+
+  h1 {
+
+    padding : 10px 0 10px 50px;
+  }
+
+  #font {
+    font: 2em sans-serif;
+    
+  }
