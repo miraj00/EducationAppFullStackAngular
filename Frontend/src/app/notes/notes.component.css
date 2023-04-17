@@ -1,0 +1,137 @@
+#content {
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  #newNotes {
+    display: inline-block;
+    width: 1300px;
+    height: 550px;
+    margin: 10px auto 10px 10px;
+    overflow: auto;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+  }
+  
+  #savedNotes {
+    display: inline-block;
+    width: 400px;
+    height: 550px;
+    margin: 10px auto 10px 10px;
+    overflow: auto;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+  }
+
+
+
+
+
+  body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+textarea {
+    width: 90%;
+    height:500px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    /* resize: vertical; */
+  }
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:80%;
+  align-content: center;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+
+
+#addNotesButton {
+  background-color: #45a049;
+  color: white;
+  border: 2px solid rgb(162, 220, 184) ;
+  border-radius: 7px;
+  align-content: center;
+  width: 15%;
+  height : 50px;
+  font-size: 20px;
+  margin-right: 5px;
+  
+}
+
+
+#addNotesButton:hover {
+  background-color: #13e91d;
+}
+
+
+
+
+#ReturnToNewNoteButton {
+  background-color: #878d8d;
+  color: white;
+  border: 2px solid rgb(7, 8, 7) ;
+  border-radius: 7px;
+  align-content: center;
+  width: 35%;
+  height : 40px;
+  font-size: 20px;
+  margin-right: 5px;
+  
+}
+
+
+#ReturnToNewNoteButton:hover {
+  background-color: #50ce8d;
+}
+
+
+#saveButton {
+  background-color: #9de0ef;
+  color: white;
+  border: 2px solid rgb(13, 15, 14) ;
+  border-radius: 7px;
+  align-content: center;
+  width: 20%;
+  height : 40px;
+  font-size: 20px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+
+}

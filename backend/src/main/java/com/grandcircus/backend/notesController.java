@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.helpdesk.ticketbackend.Ticket;
 
 
 @CrossOrigin(origins = "http://localhost:8080/notes")
