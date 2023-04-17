@@ -1,1 +1,85 @@
-<p>notes works!</p>
+
+<div id="content">
+
+<!-- Add New Note   --> 
+
+    <div id="newNotes">
+
+            <div *ngIf="myVar">   
+            <h2> Add New Note : </h2>
+                <form action="action_page.php">
+        
+                        <label for="title">Title :</label>  <br/>
+                        <input type="text" id="title" name="title" placeholder="Add Title.." [(ngModel)]="newNotes.title">
+                    
+                        <br/>
+                        <label for="subject">Notes :</label> <br/>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:300px" [(ngModel)]="newNotes.body"></textarea>
+                        <br/>
+                        <button id="addNotesButton" (click)="addNewNotes()"> Add Notes </button>
+                </form>
+            </div>
+
+
+<!--   Note Detail    -->
+
+        <div *ngIf="!myVar">
+            <form (ngSubmit)="editNotes()">
+                <h2> Notes Detail</h2>         
+                <p>_________________________________________________________________________________________________________________________________________________</p>  
+            <br>
+                <div>
+                    <!-- <label for="id">ID :</label> 
+                    <input type="number" id="id" name="id"  [(ngModel)]="editedNotes.id">  <br/> -->
+
+                    <label for="title">Title :</label>  <br/>
+                    <input type="text" id="title" name="title"  [(ngModel)]="editedNotes.title">  <br/>
+                
+                    <label for="subject">Notes :</label> <br/>
+                    <textarea id="subject" name="subject"  style="height:200px" [(ngModel)]="editedNotes.body"></textarea>
+                    <br/>
+                </div>
+
+                <button id="saveButton" (click)="onSubmit()" > Save Changes </button>      
+                
+            </form> 
+        
+            <button id="ReturnToNewNoteButton" (click)="returnToNewNotes()" > Return to : Add Notes</button> 
+        
+        </div>
+
+    </div>
+
+
+<!---  Saved Notes List -->
+
+    <div id="savedNotes">
+      <h2>Saved Notes</h2>
+
+      <table class="table align-middle mb-0 bg-white" style="margin-left: 20px; margin-top: 5px; width: 90%;">
+        <thead class="bg-light">
+          <tr>
+            <!-- <th>ID</th> -->
+            <th>Title</th>
+            <th>Remove ?</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let Note of Notes; index as i">
+            <td>
+              <p class="text-muted mb-0"><a (click)="getNotebyId(Note.id)">{{Note.title}} </a></p>
+            </td>
+
+            <td>
+              <button
+                (click)="deleteNotes(Note.id)" id="butttonStyle" >Delete</button>
+            </td>
+         </tr>
+        </tbody>
+
+      </table>
+
+    </div>
+
+</div>
