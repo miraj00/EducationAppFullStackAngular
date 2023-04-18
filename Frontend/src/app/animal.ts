@@ -1,11 +1,9 @@
 export interface Animal {
-    
     name:            string;
     taxonomy:        Taxonomy;
     locations:       string[];
     characteristics: Characteristics;
 }
-
 export interface Characteristics {
     prey:                     string;
     name_of_young:            string;
@@ -31,7 +29,6 @@ export interface Characteristics {
     age_of_sexual_maturity:   string;
     age_of_weaning:           string;
 }
-
 export interface Taxonomy {
     kingdom:         string;
     phylum:          string;
@@ -41,5 +38,3 @@ export interface Taxonomy {
     genus:           string;
     scientific_name: string;
 }
-
-

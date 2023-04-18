@@ -24,13 +24,13 @@
 <!--   Note Detail    -->
 
         <div *ngIf="!myVar">
-            <form (ngSubmit)="editNotes()">
+            <form>
                 <h2> Notes Detail</h2>         
                 <p>_________________________________________________________________________________________________________________________________________________</p>  
             <br>
                 <div>
-                    <!-- <label for="id">ID :</label> 
-                    <input type="number" id="id" name="id"  [(ngModel)]="editedNotes.id">  <br/> -->
+                    <label for="id">ID :</label> 
+                    <input type="number" id="id" name="id"  [(ngModel)]="editedNotes.id">  <br/>
 
                     <label for="title">Title :</label>  <br/>
                     <input type="text" id="title" name="title"  [(ngModel)]="editedNotes.title">  <br/>

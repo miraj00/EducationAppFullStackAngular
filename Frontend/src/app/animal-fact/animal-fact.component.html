@@ -1,1 +1,21 @@
-<p>animal-fact works!</p>
+
+<form>
+<label for="title"> Search By Name  :</label>  
+<input type="text" id="title" name="title"  [(ngModel)]="animalName">  
+
+<button id="saveButton" (click)="getAnimalList()" > Save Changes </button> 
+</form>
+
+
+
+<tbody>
+    <tr *ngFor="let Ani of Animal; index as i">
+      <td>
+        <p class="text-muted mb-0">{{Ani.name}} </p>
+      </td>
+
+      <td>
+        <button id="butttonStyle" >Delete</button>
+      </td>
+   </tr>
+  </tbody>
