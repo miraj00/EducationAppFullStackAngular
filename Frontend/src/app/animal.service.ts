@@ -15,9 +15,9 @@ export class AnimalService {
 
   constructor(private http: HttpClient) { }
 
-  GetAnimal(animal: string) : Observable <Animal>{
+  GetAnimal(animal: string) : Observable <Animal[]>{
 
-    return this.http.get<Animal>(this.url +animal, { 'headers': this.headers });
+    return this.http.get<Animal[]>(this.url +animal, { 'headers': this.headers });
   }
 
 }
