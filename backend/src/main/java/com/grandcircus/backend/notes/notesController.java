@@ -1,4 +1,4 @@
-package com.grandcircus.backend;
+package com.grandcircus.backend.notes;
 
 import java.util.List;
 

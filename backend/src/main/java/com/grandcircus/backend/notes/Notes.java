@@ -1,4 +1,4 @@
-package com.grandcircus.backend;
+package com.grandcircus.backend.notes;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
