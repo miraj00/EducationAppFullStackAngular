@@ -14,9 +14,9 @@ export class AnimalFactComponent implements OnInit {
 
    animalName : string ='';
 
-  //  Animal: Animal[] = [];
+    Animal: Animal[] = [];
 
-   Animal=({} as any) as Animal;
+  // Animal=({} as any) as Animal;
 
 
   constructor(private router: Router, private animalApi : AnimalService) { }
@@ -29,7 +29,7 @@ export class AnimalFactComponent implements OnInit {
 
 
   getAnimalList(){
-  this.animalApi.GetAnimal(this.animalName ).subscribe((result : Animal) => {
+  this.animalApi.GetAnimal(this.animalName ).subscribe((result : Animal[]) => {
     console.log(result);
     this.Animal = result;
   })
