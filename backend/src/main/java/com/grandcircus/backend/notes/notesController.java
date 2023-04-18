@@ -25,7 +25,7 @@ public class notesController {
 	
 	
 	@GetMapping("/notes")
-	public List<Notes> getBookmarks(){
+	public List<Notes> getNotes(){
 		return repo.findAll();
 	}
 	
