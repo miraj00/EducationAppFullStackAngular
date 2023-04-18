@@ -25,23 +25,19 @@ export class NotesComponent implements OnInit {
 
   constructor(private NotesAPI : NotesService, private router: Router, private route: ActivatedRoute) {
 
-
+    this.loadNotes();
 
 
   }
 
   ngOnInit(): void {
-    // this.id = this.route.snapshot.params['id'];
 
-    this.NotesAPI.getNotesDetail(this.id).subscribe(
-      (NotesResult) => {
-        this.editedNotes=NotesResult;
-        // this.NotesInfo = NotesResult;
-          // this.loading = false;
-       }
-  );
-
-      this.loadNotes();
+  //   this.NotesAPI.getNotesDetail(this.id).subscribe(
+  //     (NotesResult) => {
+  //       this.editedNotes=NotesResult;
+  //      }
+  // );
+     
   }
   
   addNewNotes(){
@@ -49,8 +45,14 @@ export class NotesComponent implements OnInit {
       ()=> {                   
           this.NotesSave.emit(this.newNotes);
           this.newNotes =({} as any) as Notes;
+
+          this.loadNotes();
       })
+
+    
   }
+
+
   loadNotes() {  
     this.NotesAPI.getAllNotess().subscribe(
        (data : Notes []) => {
@@ -81,19 +83,20 @@ export class NotesComponent implements OnInit {
 
 
  editNotes() {
-   console.log(this.editedNotes);
+  //  console.log(this.editedNotes);
   this.NotesAPI.putNotes(this.editedNotes.id, this.editedNotes)
     .subscribe( data => {
-      console.log(data); 
+      // console.log(data); 
+
       this.loadNotes();
+      this.returnToNewNotes();
     })   
   }
      
 
 onSubmit(){
   this.editNotes();
-  this.loadNotes();
-} 
+ } 
 
 
 

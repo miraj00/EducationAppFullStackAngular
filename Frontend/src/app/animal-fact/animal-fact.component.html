@@ -9,15 +9,27 @@
 
 
 <tbody>
-    <tr *ngFor="let Ani of Animal; index as i">
+    <tr>
       <td>
-        <p class="text-muted mb-0">{{Ani.name}} </p>
+        <p> Name : {{Animal[0].name}} </p>      
+        <p>Location : {{Animal[0].locations}} </p>
+        <p>Habitat : {{Animal[0].characteristics.habitat}} </p>
+        <p>Lifespan : {{Animal[0].characteristics.lifespan}} </p>
+        <p>Biggest Threat :{{Animal[0].characteristics.biggest_threat}} </p>
+        <p>Diet : {{Animal[0].characteristics.diet}} </p>
+       </td>
+
+       <td>
+        <p> Name : {{Animal[1].name}} </p>      
+        <p>Location : {{Animal[1].locations}} </p>
+        <p>Habitat : {{Animal[1].characteristics.habitat}} </p>
+        <p>Lifespan : {{Animal[1].characteristics.lifespan}} </p>
+        <p>Biggest Threat :{{Animal[1].characteristics.biggest_threat}} </p>
+        <p>Diet : {{Animal[1].characteristics.diet}} </p>
+       </td>
 
 
-
-        
-      </td>
-
+<br/> <br/>
      
    </tr>
   </tbody>

@@ -1,4 +1,4 @@
-package com.grandcircus.backend;
+package com.grandcircus.backend.notes;
 public class NotesNotFoundException extends RuntimeException {
 
 	private static final long serialVersionUID = 1L;
