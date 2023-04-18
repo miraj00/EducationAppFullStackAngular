@@ -21,7 +21,7 @@ INSERT INTO animals (name, location, habitat, lifespan, biggest_threat,diet) VAL
 
 CREATE TABLE `notes` (     
   `id` bigint NOT NULL AUTO_INCREMENT,
-  `title` varchar(300) DEFAULT NULL,
+  `title` varchar(30) DEFAULT NULL,
   `body` varchar(5000) DEFAULT NULL, 
    PRIMARY KEY (`id`)  
 );

@@ -23,7 +23,12 @@ export class NotesComponent implements OnInit {
   myVar: boolean = true;
 
 
-  constructor(private NotesAPI : NotesService, private router: Router, private route: ActivatedRoute) {}
+  constructor(private NotesAPI : NotesService, private router: Router, private route: ActivatedRoute) {
+
+
+
+
+  }
 
   ngOnInit(): void {
     // this.id = this.route.snapshot.params['id'];
@@ -36,12 +41,7 @@ export class NotesComponent implements OnInit {
        }
   );
 
-  
-
-
-
-
-    this.loadNotes();
+      this.loadNotes();
   }
   
   addNewNotes(){
@@ -51,8 +51,6 @@ export class NotesComponent implements OnInit {
           this.newNotes =({} as any) as Notes;
       })
   }
-
-
   loadNotes() {  
     this.NotesAPI.getAllNotess().subscribe(
        (data : Notes []) => {
@@ -60,6 +58,8 @@ export class NotesComponent implements OnInit {
             this.Notes = data;
         }); 
   }
+
+
 
   deleteNotes(id: number) : void {
     this.NotesAPI.deleteNotes(id).subscribe(
@@ -82,15 +82,17 @@ export class NotesComponent implements OnInit {
 
  editNotes() {
    console.log(this.editedNotes);
-  this.NotesAPI.putNotes(this.id, this.editedNotes)
+  this.NotesAPI.putNotes(this.editedNotes.id, this.editedNotes)
     .subscribe( data => {
-      console.log(data);  
-    })
+      console.log(data); 
+      this.loadNotes();
+    })   
   }
      
 
 onSubmit(){
   this.editNotes();
+  this.loadNotes();
 } 
 
 
