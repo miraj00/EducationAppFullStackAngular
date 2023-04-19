@@ -30,8 +30,8 @@ export class AnimalFactComponent implements OnInit {
 
   getAnimalList(){
   this.animalApi.GetAnimal(this.animalName ).subscribe((result : Animal[]) => {
-    console.log(result);
-    this.Animal = result;
+    console.log(result);    
+    this.Animal = result.sort(() => Math.random() - 0.5);
   })
 }
 
