@@ -23,14 +23,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ContactComponent } from './contact/contact.component';
-
+import { QuizComponent } from './quiz/quiz.component';
+import { LightboxModule } from 'ngx-lightbox';
 
 const routes: Routes = [
   {path:"", component: HomeComponent},
   {path:"login", component: LoginComponent},
   {path:"animals", component: AnimalFactComponent},
   {path:"plants", component: PlantFactComponent},
-  {path:"quiz", component: QuizFormComponent},
+  {path:"quiz", component: QuizComponent},
   {path:"calculator", component: CalculatorComponent},
   {path:"notes", component: NotesComponent},
   {path:"calculator", component: CalculatorComponent},
@@ -54,7 +55,8 @@ const routes: Routes = [
     NotesComponent,
     NavbarComponent,
     CalculatorComponent,
-    ContactComponent
+    ContactComponent,
+    QuizComponent
   ],
 
   imports: [
@@ -65,6 +67,7 @@ const routes: Routes = [
     CommonModule,
     MatButtonModule,
     BrowserAnimationsModule,
+    LightboxModule
    
   ],
 

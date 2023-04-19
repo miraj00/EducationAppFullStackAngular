@@ -1,0 +1,28 @@
+[
+    {
+      "question": "How many legs most of the animals have ?",
+      "options": ["2", "4", "10", "3"],
+      "answer": "4",
+      "id": 1
+    },
+    {
+      "question": "What animal is the tallest from all below ?",
+      "options": ["Cat", "Dog", "Giraffe", "Lion"],
+      "answer": "Giraffe",
+      "id": 2
+    },
+    {
+      "question": "Which is the fastest animal from all below ?",
+      "options": ["Cheetah", "Turtle", "Buffalo", "Camel"],
+      "answer": "Cheetah",
+      "id": 3
+    },
+    {
+      "question": "What animal has black and white stripes all over the body ?",
+      "options": ["Cat", "Lion", "Elephant", "Zebra"],
+      "answer": "Zebra",
+      "id": 4
+    }
+  ]
+  
+

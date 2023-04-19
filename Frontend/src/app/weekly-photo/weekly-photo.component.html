@@ -1,3 +1,23 @@
-<p>weekly-photo works!</p>
+<div class="sidenav">
 
+	<a id="Animals" (click)="renderItem('Animals')">Animals</a>
+	<a id="Plants"(click)="renderItem('Plants')">Plants</a>
+	<a id="Nature" (click)="renderItem('Nature')">Nature</a>
+	<a id="Food"(click)="renderItem('Food')">Food</a>
+	<a id="Mountains" (click)="renderItem('Mountains')">Mountains</a>
+	<a id="Roads" (click)="renderItem('Roads')">Roads</a>
+	<a id="Drawings" (click)="renderItem('Drawings')">Drawings</a>
+	<a id="Waterfalls" (click)="renderItem('Waterfalls')">Waterfalls</a>
+</div>
 
+<h1 style="text-align: center"> Check and see if you can identify each Image ??</h1>
+
+<div class="main">
+	
+	<div class="imgcontainer">
+	<div class="gallery" *ngFor="let image of _albums; let i=index">
+	  <img src="{{image.thumb}}" (click)="open(i)" />
+	</div>
+	</div>
+
+</div>
