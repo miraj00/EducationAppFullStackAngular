@@ -27,8 +27,8 @@ export class AnimalService {
 
 
  
-  addAnimal(newAnimal : AnimalDB[]) : Observable <AnimalDB[]> {
-    return this.http.post<AnimalDB[]>(`${this.baseURL}`, newAnimal);
+  addAnimal(newAnimal : AnimalDB) : Observable <AnimalDB> {
+    return this.http.post<AnimalDB>(`${this.baseURL}`, newAnimal);
   };
 
 
