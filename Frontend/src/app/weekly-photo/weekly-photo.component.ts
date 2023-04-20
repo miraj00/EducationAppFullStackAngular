@@ -19,12 +19,12 @@ export class WeeklyPhotoComponent {
 
 
 	constructor(private _lightbox: Lightbox) {
-
-	}
 	
-  	
-	renderItem(item : string){
+	}
 
+	
+	renderItem(item : string){
+		
 		if ( item === 'Food') { this.x = 1; this.y = 12;}
 		if ( item === 'Animals') {this.x = 13; this.y = 24;}
 		if ( item === 'Plants') {this.x = 25; this.y = 36;}
@@ -63,3 +63,4 @@ export class WeeklyPhotoComponent {
 
 
 }
+
