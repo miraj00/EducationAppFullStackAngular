@@ -19,7 +19,10 @@ export class AnimalFactComponent implements OnInit {
    // Animals : ({} as any) as Animal;
 
    savedAnimal : AnimalDB[] = [];;
-
+  
+   // savedAnimal = {} as AnimalDB;
+   
+    // addAnimal : AnimalDB[] = [];
 
   constructor(private router: Router, private animalApi : AnimalService, private saveAnimalApi : AnimalService) {
 
@@ -41,10 +44,10 @@ export class AnimalFactComponent implements OnInit {
 
       let animals = this.Animals[i];
       
-      let addAnimal : AnimalDB[] = [];
+      let addAnimal = {} as AnimalDB;
 
       addAnimal.name = animals.name;
-      addAnimal.location = animals.locations;
+      addAnimal.location = animals.locations.toString();
       addAnimal.habitat = animals.characteristics.habitat;
       addAnimal.lifespan = animals.characteristics.lifespan;
       addAnimal.biggest_threat = animals.characteristics.biggest_threat;
@@ -52,7 +55,7 @@ export class AnimalFactComponent implements OnInit {
 
       this.savedAnimal.push(addAnimal);
 
-      this.saveAnimalApi.addAnimal(addAnimal).subscribe()
+      this.saveAnimalApi.addAnimal(this.savedAnimal).subscribe()
       }
 }
 

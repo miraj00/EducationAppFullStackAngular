@@ -31,6 +31,7 @@ export class CollectionComponent implements OnInit {
   }
 
   deleteFavAnimal(id: number) : void {
+    console.log(id);
     this.api.deleteFavAnimal(id).subscribe(
       ()=> this.loadFavAnimals());     
   }

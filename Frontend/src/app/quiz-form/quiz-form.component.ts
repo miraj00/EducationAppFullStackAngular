@@ -24,9 +24,9 @@ export class QuizFormComponent {
   score: any = 0;
 
 
-  onSelecting(value : string) {
-    console.log(value);
-    this.answer = value;
+  onSelecting(option : string) {
+    console.log(option);
+    this.answer = option;
   }
 
   onPrev() {
@@ -38,11 +38,13 @@ export class QuizFormComponent {
     console.log(this.answer);
     console.log(this.question.answer);
 
-    if ( "4" === this.question.answer || "Giraffe" === this.question.answer ||
-    "Cheetah" === this.question.answer || "Zebra" === this.question.answer ) {
-      ++this.score;
 
+
+    if ( "4" === this.answer || "Giraffe" === this.answer ||
+    "Cheetah" === this.answer || "Zebra" === this.answer ) {
+      this.score++;
     }
+
     console.log("Score : ", this.score);
     // console.log(this.questions);
     console.log("Answer : ", this.answer);
