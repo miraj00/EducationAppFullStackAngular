@@ -1,4 +1,18 @@
 p {
 
-    font-size: 30px;
+    font-size: 20px;
 }
+
+
+#imageBox {
+    display: inline-block;
+    width: 750px;
+    height: 450px;
+    margin: 10px auto 10px 10px;
+    overflow: auto;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+    margin-left: 550px;
+  }

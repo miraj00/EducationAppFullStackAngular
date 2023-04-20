@@ -38,3 +38,15 @@ export interface Taxonomy {
     genus:           string;
     scientific_name: string;
 }
+
+
+
+export interface AnimalDB {
+    id:             number;
+    name:           string;
+    location:       string;
+    habitat:        string;
+    lifespan:       string;
+    biggest_threat: string;
+    diet:           string;
+}

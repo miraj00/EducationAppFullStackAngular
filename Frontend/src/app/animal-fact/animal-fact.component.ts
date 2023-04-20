@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AnimalService } from '../animal.service';
-import { Animal } from '../animal';
+import { Animal, AnimalDB } from '../animal';
 
 
 @Component({
@@ -14,26 +14,51 @@ export class AnimalFactComponent implements OnInit {
 
    animalName : string ='';
 
-    Animal: Animal[] = [];
+   Animals: Animal[] = [];
 
-  // Animal=({} as any) as Animal;
+   // Animals : ({} as any) as Animal;
+
+   savedAnimal : AnimalDB[] = [];;
 
 
-  constructor(private router: Router, private animalApi : AnimalService) { }
+  constructor(private router: Router, private animalApi : AnimalService, private saveAnimalApi : AnimalService) {
 
-  ngOnInit(): void {
-  }
-  // onSubmit(form: NgForm){
-  //   this.router.navigate(['search', form.value.search]);
-  // }
+   }
+
+  ngOnInit(): void {  }
+
 
 
   getAnimalList(){
-  this.animalApi.GetAnimal(this.animalName ).subscribe((result : Animal[]) => {
+  this.animalApi.GetAnimal(this.animalName).subscribe((result : Animal[]) => {
     console.log(result);    
-    this.Animal = result.sort(() => Math.random() - 0.5);
+    this.Animals = result;
+    // this.Animals = result.sort(() => Math.random() - 0.5);
   })
 }
 
+  saveAnimal(i : number) {
 
+      let animals = this.Animals[i];
+      
+      let addAnimal : AnimalDB[] = [];
+
+      addAnimal.name = animals.name;
+      addAnimal.location = animals.locations;
+      addAnimal.habitat = animals.characteristics.habitat;
+      addAnimal.lifespan = animals.characteristics.lifespan;
+      addAnimal.biggest_threat = animals.characteristics.biggest_threat;
+      addAnimal.diet = animals.characteristics.diet;
+
+      this.savedAnimal.push(addAnimal);
+
+      this.saveAnimalApi.addAnimal(addAnimal).subscribe()
+      }
 }
+
+
+
+
+
+
+
