@@ -25,6 +25,9 @@ export class WeeklyPhotoComponent {
 	
 	renderItem(item : string){
 		
+		
+		this._albums = [];
+
 		if ( item === 'Food') { this.x = 1; this.y = 12;}
 		if ( item === 'Animals') {this.x = 13; this.y = 24;}
 		if ( item === 'Plants') {this.x = 25; this.y = 36;}
@@ -43,9 +46,12 @@ export class WeeklyPhotoComponent {
 		   caption: caption,
 		   thumb: thumb
 		};
-  
+		
 		this._albums.push(album);
 	  }
+
+	  	
+
 
 	}
 
