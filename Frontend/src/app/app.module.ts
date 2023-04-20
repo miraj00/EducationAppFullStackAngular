@@ -37,7 +37,9 @@ const routes: Routes = [
   {path:"calculator", component: CalculatorComponent},
   {path:"image", component: WeeklyPhotoComponent},
   {path:"contact", component: ContactComponent},
+  {path:"favAnimals", component: CollectionComponent},
 
+ 
 ]
 
 @NgModule({

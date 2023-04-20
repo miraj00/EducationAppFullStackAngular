@@ -1,1 +1,42 @@
-<p>collection works!</p>
+<table class="table align-middle mb-0 bg-white" style="margin-left: 70px; margin-top: 10px; width: 90%;">
+    <thead class="bg-light">
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Habitat</th>
+        <th>Lifespan</th>
+        <th>Biggest Threat</th>
+        <th> Diet </th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let Animal of favAnimals; index as i">
+        <td>
+          <div class="d-flex align-items-center">
+             <div class="ms-3">
+              <p class="fw-normal mb-1">{{Animal.name}}</p>
+             </div>
+          </div>
+        </td>
+        <td>
+          <p class="fw-normal mb-1" > <a>{{Animal.location}}</a></p>
+        </td>
+        <td>
+          <p class="text-muted mb-0">{{Animal.habitat}}</p>
+        </td>
+        <td>
+            <p class="text-muted mb-0">{{Animal.lifespan}}</p>
+        </td>
+        <td>
+            <p class="text-muted mb-0">{{Animal.biggest_threat}}</p>
+        </td>
+        <td>
+          <p class="text-muted mb-0">{{Animal.diet}}</p>
+        </td>
+
+        <td>
+          <button  id="buttonStyle"> Delete</button>
+        </td>
+
+        <!-- (click)="deleteAnimal(i)" -->
