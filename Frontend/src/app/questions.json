@@ -1,26 +1,26 @@
 [
     {
-      "question": "How many legs most of the animals have ?",
-      "options": ["2", "4", "10", "3"],
-      "answer": "4",
+      "question": "Which animal lives in tropical jungles?",
+      "options": ["Polar Bear", "Rabbit", "Spider Monkey", "Moose"],
+      "answer": "Spider Monkey",
       "id": 1
     },
     {
-      "question": "What animal is the tallest from all below ?",
-      "options": ["Cat", "Dog", "Giraffe", "Lion"],
-      "answer": "Giraffe",
+      "question": "Which animal is a carnivore?",
+      "options": ["Lion", "Bald Eagle", "Blue Whale", "All of the above"],
+      "answer": "All of the above",
       "id": 2
     },
     {
-      "question": "Which is the fastest animal from all below ?",
-      "options": ["Cheetah", "Turtle", "Buffalo", "Camel"],
-      "answer": "Cheetah",
+      "question": "Which animal has the longest lifespan?",
+      "options": ["Parrot", "Otter", "Elephant", "Galapagos Tortoise"],
+      "answer": "Galapagos Tortoise",
       "id": 3
     },
     {
-      "question": "What animal has black and white stripes all over the body ?",
-      "options": ["Cat", "Lion", "Elephant", "Zebra"],
-      "answer": "Zebra",
+      "question": "What is the biggest threat to most animals?",
+      "options": ["Invasive Species", "Habitat Loss", "Humans", "Power Lines"],
+      "answer": "Habitat Loss",
       "id": 4
     }
   ]
