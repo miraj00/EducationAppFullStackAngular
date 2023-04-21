@@ -39,7 +39,7 @@ const routes: Routes = [
   {path:"image", component: WeeklyPhotoComponent},
   {path:"contact", component: ContactComponent},
   {path:"favAnimals", component: CollectionComponent},
-
+  {path:"videos", component: VideosComponent},
  
 ]
 
