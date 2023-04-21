@@ -25,6 +25,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { ContactComponent } from './contact/contact.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { LightboxModule } from 'ngx-lightbox';
+import { VideosComponent } from './videos/videos.component';
 
 const routes: Routes = [
   {path:"", component: HomeComponent},
@@ -58,7 +59,8 @@ const routes: Routes = [
     NavbarComponent,
     CalculatorComponent,
     ContactComponent,
-    QuizComponent
+    QuizComponent,
+    VideosComponent
   ],
 
   imports: [

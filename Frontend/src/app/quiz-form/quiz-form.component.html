@@ -11,13 +11,13 @@
        
       />{{option}}
     </div>
-    <button class="prev" *ngIf="i>0" (click)="onPrev()">prev</button>
-    <button class="next" (click)="onNext()">next</button>
+    <button class="prev" *ngIf="i>0" (click)="onPrev()">Previous</button>
+    <button class="next" (click)="onNext()">Next</button>
   </div>
   
   <ng-template #showScore>
     <div class="score">
-      <h3>Score : {{this.score}}</h3>
+      <h3>Score: {{this.score}}</h3>
     </div>
   </ng-template>
   
