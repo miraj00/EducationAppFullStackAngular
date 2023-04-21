@@ -33,6 +33,7 @@ export class WeeklyPhotoComponent {
 		if ( item === 'Roads') {this.x = 61; this.y = 72;}
 		if ( item === 'Drawings') {this.x = 73; this.y = 84;}
 		if ( item === 'Waterfalls') {this.x = 85; this.y = 96;}
+		if ( item === 'Paintings') {this.x = 97; this.y = 108;}
 
 	  for (let i = this.x; i <= this.y; i++) {
 		const src = './assets/' + i + '.jpg';
