@@ -40,8 +40,8 @@ export class QuizFormComponent {
 
 
 
-    if ( "4" === this.answer || "Giraffe" === this.answer ||
-    "Cheetah" === this.answer || "Zebra" === this.answer ) {
+    if ( "Spider Monkey" === this.answer || "All of the above" === this.answer ||
+    "Galapagos Tortoise" === this.answer || "Habitat Loss" === this.answer ) {
       this.score++;
     }
 
