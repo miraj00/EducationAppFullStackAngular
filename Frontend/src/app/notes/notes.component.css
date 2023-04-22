@@ -6,7 +6,7 @@
   #newNotes {
     display: inline-block;
     width: 1300px;
-    height: 550px;
+    height: 650px;
     margin: 10px auto 10px 10px;
     overflow: auto;
     -moz-box-shadow: #555 0 0 8px;
@@ -18,7 +18,7 @@
   #savedNotes {
     display: inline-block;
     width: 400px;
-    height: 550px;
+    height: 650px;
     margin: 10px auto 10px 10px;
     overflow: auto;
     -moz-box-shadow: #555 0 0 8px;
