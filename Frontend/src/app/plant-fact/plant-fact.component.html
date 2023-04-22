@@ -1,2 +1,31 @@
 
+<form>
+    <label for="title" style="margin-left: 800px;"> Enter ID ( Random Number) :</label> &nbsp;  
+    <input type="text" id="title" name="title"  [(ngModel)]="id"> &nbsp;  
+    
+    <button id="saveButton" (click)="getPlantList()" > Submit </button>
+</form>
 
+<form id="buttonStyle" style="margin-left: 900px; margin-top: 15px;">
+     <button id="counterButton" (click)="counterMinus()">Previous</button> 
+     <button id="counterButton" (click)="counterPlus()">Next</button>
+</form>
+
+
+<div id="infoPage">
+
+    <br/><br/>
+<p>Name : {{Plants.common_name}} </p> <br/>
+<p>Dimenstion : {{Plants.dimension}} </p> <br/>
+<p>Attracts : {{Plants.attracts}} </p> <br/>
+<p>Propagation : {{Plants.propagation}} </p> <br/>
+<p>Sunlight : {{Plants.sunlight}} </p> <br/>
+<p>Fruits : {{Plants.fruits}} </p> <br/>
+<p>Photo : {{Plants.default_image.original_url}} </p>
+
+</div>
+
+<div id="picPage">
+<img src="{{Plants.default_image.original_url}}" alt="" style="width :800px; height:600px">
+
+</div>

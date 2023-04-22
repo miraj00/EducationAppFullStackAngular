@@ -1,0 +1,52 @@
+#infoPage {
+    display: inline-block;
+    width: 1000px;
+    height: 750px;
+    margin: 20px auto 10px 200px;
+    overflow: auto;
+    /* -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px; */
+
+  }
+  
+  #picPage {
+    display: inline-block;
+    width: 800px;
+    height: 600px;
+    margin: 0px auto 150px 30px;
+    overflow: auto;
+    -moz-box-shadow: #555 0 0 8px;
+    -webkit-box-shadow: #555 0 0 8px;
+    -o-box-shadow: #555 0 0 8px;
+    box-shadow: #555 0 0 8px;
+  }
+
+p {
+  font-size: 25px;
+}
+
+
+#counterButton {
+    background-color: #45a049;
+    color: white;
+    border: 2px solid rgb(162, 220, 184) ;
+    border-radius: 7px;
+    align-content: center;
+    width: 15%;
+    height : 50px;
+    font-size: 20px;
+    margin-right: 5px;
+    
+  }
+  
+  
+  #counterButton:hover {
+    background-color: #13e91d;
+  }
+  
+  
+  label {
+    font-size: 30px; 
+  }
