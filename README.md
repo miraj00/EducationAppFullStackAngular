@@ -43,19 +43,19 @@ https://github.com/miraj00/EducationAppFullStackAngular
 
 ## Outcome ( Screenshot )
 
-![](../EducationAppFullStackAngular/Frontend/src/assets/HomePage.JPG)  
-![](../EducationAppFullStackAngular/Frontend/src/assets/AnimalPage.JPG)
-![](../EducationAppFullStackAngular/Frontend/src/assets/PlantPage.JPG)  
-![](../EducationAppFullStackAngular/Frontend/src/assets/QuizPage.JPG)
-![](../EducationAppFullStackAngular/Frontend/src/assets/CalculatorPage.JPG)  
-![](../EducationAppFullStackAngular/Frontend/src/assets/NotesPage.JPG)
-![](../EducationAppFullStackAngular/Frontend/src/assets/NotesDetailPage.JPG)  
-![](../EducationAppFullStackAngular/Frontend/src/assets/ImageMountainsPage.JPG)
-![](../EducationAppFullStackAngular/Frontend/src/assets/ImageFoodPage.JPG)  
-![](../EducationAppFullStackAngular/Frontend/src/assets/FavoriteAnimalPage.JPG)
-![](../EducationAppFullStackAngular/Frontend/src/assets/VideoPage.JPG)  
-![](../EducationAppFullStackAngular/Frontend/src/assets/ContactUsPage.JPG)
-![](../EducationAppFullStackAngular/Frontend/src/assets/LoginPage.JPG)
+![](./Frontend/src/assets/HomePage.JPG)  
+![](./Frontend/src/assets/AnimalPage.JPG)
+![](./Frontend/src/assets/PlantPage.JPG)  
+![](./Frontend/src/assets/QuizPage.JPG)
+![](./Frontend/src/assets/CalculatorPage.JPG)  
+![](./Frontend/src/assets/NotesPage.JPG)
+![](./Frontend/src/assets/NotesDetailPage.JPG)  
+![](./Frontend/src/assets/ImageMountainsPage.JPG)
+![](./Frontend/src/assets/ImageFoodPage.JPG)  
+![](./Frontend/src/assets/FavoriteAnimalPage.JPG)
+![](./Frontend/src/assets/VideoPage.JPG)  
+![](./Frontend/src/assets/ContactUsPage.JPG)
+![](./Frontend/src/assets/LoginPage.JPG)
 
 
 
