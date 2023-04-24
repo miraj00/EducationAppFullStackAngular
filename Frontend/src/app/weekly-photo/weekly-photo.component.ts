@@ -34,7 +34,7 @@ export class WeeklyPhotoComponent {
 		if ( item === 'Nature') {this.x = 37; this.y = 48;}
 		if ( item === 'Mountains') {this.x = 49; this.y = 60;}
 		if ( item === 'Trees') {this.x = 61; this.y = 72;}
-		if ( item === 'Birds') {this.x = 73; this.y = 81;}
+		if ( item === 'Birds') {this.x = 73; this.y = 84;}
 		if ( item === 'Waterfalls') {this.x = 85; this.y = 90;}
 		if ( item === 'Fishes') {this.x = 97; this.y = 108;}
 		if ( item === 'Vegetables') {this.x = 109; this.y = 120;}
@@ -51,8 +51,6 @@ export class WeeklyPhotoComponent {
 		
 		this._albums.push(album);
 	  }
-
-	  	
 
 
 	}
