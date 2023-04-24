@@ -29,7 +29,8 @@ p {
 
 
 #counterButton {
-    background-color: #45a049;
+    background-color:#42773b;
+    ;
     color: white;
     border: 2px solid rgb(162, 220, 184) ;
     border-radius: 7px;
@@ -41,9 +42,8 @@ p {
     
   }
   
-  
   #counterButton:hover {
-    background-color: #13e91d;
+    background-color: #45a049;
   }
   
   

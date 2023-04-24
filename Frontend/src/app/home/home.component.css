@@ -2,21 +2,21 @@
 
     font-size: 50px;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 300px;
 
 }
 
 
 .button {
-    background-color: #11db94; /* Green */
+    background-color: #42773b; /* Green */
     border: none;
     color: white;
     padding: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 25px;
+    margin: 100px 2px;
     cursor: pointer;
     border-radius: 50%;
   }
@@ -24,3 +24,11 @@
 #buttonStyle{
     margin-left : 1000px;
 } 
+.bg{
+    background-image: url("/assets/homepic.jpg");
+    margin: 200px;
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    
+}
