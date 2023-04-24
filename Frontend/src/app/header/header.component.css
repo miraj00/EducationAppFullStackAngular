@@ -1,8 +1,9 @@
 header {
     display: flex;
     justify-content: space-between;
-    margin: 10px 10px 20px;
-    background-color: #000101;
+    margin: 10px 10px 20px; 
+    margin-bottom: 00px;
+    background-color: #42773b;
   }
   
 
@@ -13,6 +14,7 @@ header {
   h1 {
 
     padding : 10px 0 10px 50px;
+
   }
 
   #font {
