@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Animal } from './animal';
 import { AnimalDB } from './animal';
+import { Photo } from './animalphoto';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,10 @@ export class AnimalService {
     headers = new HttpHeaders()
                 .set ('X-Api-Key', 'XexY1kevsTsVw5UJMv7/GQ==Ve0sxQjJVG7pBGbf');
 
+    pictureUrl : string = "https://api.pexels.com/v1/search?query=";
+    //pic : string = "https://api.pexels.com/v1/search?query=dog&per_page=1";
+    pictureHeaders = new HttpHeaders()
+                .set ('Authorization', 'Bv2AHSfVlX8cL7lx9w9gv5Z4VopWrRjuoNNd9tcHJYBIANQdmQ76lqfU');    
 
     baseURL : String = `http://localhost:8080/animals`;
 
@@ -23,6 +28,11 @@ export class AnimalService {
   GetAnimal(animal: string) : Observable <Animal[]>{
 
     return this.http.get<Animal[]>(this.url +animal, { 'headers': this.headers });
+  }
+
+  GetAnimalPicture (animal: string) : Observable <Photo> {
+    console.log(this.http.get<Photo>(`${this.url}/${animal}`));
+    return this.http.get<Photo>(this.pictureUrl + animal, { 'headers': this.pictureHeaders });
   }
 
 

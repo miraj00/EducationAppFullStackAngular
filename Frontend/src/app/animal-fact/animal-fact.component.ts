@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AnimalService } from '../animal.service';
 import { Animal, AnimalDB } from '../animal';
+import { Place, Photo, Src, Convert } from '../animalphoto';
 
 
 @Component({
@@ -24,7 +25,10 @@ export class AnimalFactComponent implements OnInit {
    
     // addAnimal : AnimalDB[] = [];
 
-  constructor(private router: Router, private animalApi : AnimalService, private saveAnimalApi : AnimalService) {
+    Pictures = {} as Photo;
+
+
+  constructor(private router: Router, private animalApi : AnimalService, private pictureApi: AnimalService, private saveAnimalApi : AnimalService) {
 
    }
 
@@ -38,7 +42,15 @@ export class AnimalFactComponent implements OnInit {
     this.Animals = result;
     // this.Animals = result.sort(() => Math.random() - 0.5);
   })
+
+  
 }
+
+getPicture(){
+  this.pictureApi.GetAnimalPicture(this.animalName).subscribe((result : Photo) => {
+    console.log(result);    
+    this.Pictures = result;      
+  })}  
 
   saveAnimal(i : number) {
 
@@ -68,6 +80,8 @@ export class AnimalFactComponent implements OnInit {
 
       this.saveAnimalApi.addAnimal(addAnimal).subscribe()
       }
+
+      
 }
 
 
