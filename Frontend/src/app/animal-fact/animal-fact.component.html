@@ -1,68 +1,55 @@
-
 <form>
-<label for="title" style="margin-left: 800px;"> Search By Name :</label> &nbsp;  
-<input type="text" id="title" name="title"  [(ngModel)]="animalName"> &nbsp;  
+  <label for="title" style="margin-left: 800px;"> Search By Name :</label> &nbsp;
+  <input type="text" id="title" name="title" [(ngModel)]="animalName"> &nbsp;
 
-<button id="saveButton" (click)="getAnimalList(); getPicture()" > Submit </button>
+  <button id="saveButton" (click)="getAnimalList(); displayPicture()"> Submit </button>
 </form>
 
-
 <div id="imageBox">
-
-   
-  <!-- <img src="../assets/13.jpg" alt="Tiger" style="width :750px; height:450px"> -->
   <img src="{{Pictures.photos[0].src.original}}" alt="" style="width :450px; height:450px">
-  <!-- <img src="{{Plants.default_image.original_url}}" alt="" style="width :800px; height:600px"> -->
-
-  <!-- <button id="saveButton" (click)="getPicture()" > Submit </button> -->
-
 </div>
 
-
-
-
-
-  <table class="table align-middle mb-0 bg-white" style="margin-left: 70px; margin-top: 10px; width: 90%;">
-    <thead class="bg-light">
-      <tr>
-        <th>Name</th>
-        <th>Location</th>
-        <th>Habitat</th>
-        <th>Lifespan</th>
-        <th>Biggest Threat</th>
-        <th> Diet </th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr  *ngFor="let Animal of Animals; index as i">
-        <td>
-          <div class="d-flex align-items-center">
-             <div class="ms-3">
-              <p class="fw-normal mb-1">{{Animal.name}}</p>
-             </div>
+<table class="table align-middle mb-0 bg-white" style="margin-left: 70px; margin-top: 10px; width: 90%;">
+  <thead class="bg-light">
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Habitat</th>
+      <th>Lifespan</th>
+      <th>Biggest Threat</th>
+      <th> Diet </th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Animal of Animals; index as i">
+      <td>
+        <div class="d-flex align-items-center">
+          <div class="ms-3">
+            <p class="fw-normal mb-1">{{Animal.name}}</p>
           </div>
-        </td>
-        <td>
-          <p class="fw-normal mb-1" > <a>{{Animal.characteristics.location}}</a></p>
-        </td>
-        <td>
-          <p class="text-muted mb-0">{{Animal.characteristics.habitat}}</p>
-        </td>
-        <td>
-            <p class="text-muted mb-0">{{Animal.characteristics.lifespan}}</p>
-        </td>
-        <td>
-            <p class="text-muted mb-0">{{Animal.characteristics.biggest_threat}}</p>
-        </td>
-        <td>
-          <p class="text-muted mb-0">{{Animal.characteristics.diet}}</p>
-        </td>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1"> <a>{{Animal.characteristics.location}}</a></p>
+      </td>
+      <td>
+        <p class="text-muted mb-0">{{Animal.characteristics.habitat}}</p>
+      </td>
+      <td>
+        <p class="text-muted mb-0">{{Animal.characteristics.lifespan}}</p>
+      </td>
+      <td>
+        <p class="text-muted mb-0">{{Animal.characteristics.biggest_threat}}</p>
+      </td>
+      <td>
+        <p class="text-muted mb-0">{{Animal.characteristics.diet}}</p>
+      </td>
 
-        <td>
-          <button (click)="saveAnimal(i)" id="buttonStyle"> Save </button>
-        </td>
+      <td>
+        <button (click)="saveAnimal(i)" id="buttonStyle"> Save </button>
+      </td>
 
-     </tr>
-    </tbody>
-  </table>
+    </tr>
+  </tbody>
+</table>

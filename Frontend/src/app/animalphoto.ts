@@ -1,10 +1,4 @@
-// To parse this data:
-//
-//   import { Convert, Place } from "./file";
-//
-//   const place = Convert.toPlace(json);
-
-export interface Place {
+export interface Picture {
     page:          number;
     per_page:      number;
     photos:        Photo[];
@@ -39,11 +33,11 @@ export interface Src {
 
 // Converts JSON strings to/from your types
 export class Convert {
-    public static toPlace(json: string): Place {
+    public static toPlace(json: string): Picture {
         return JSON.parse(json);
     }
 
-    public static placeToJson(value: Place): string {
+    public static placeToJson(value: Picture): string {
         return JSON.stringify(value);
     }
 }
