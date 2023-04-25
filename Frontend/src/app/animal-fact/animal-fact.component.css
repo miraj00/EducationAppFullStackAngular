@@ -6,7 +6,7 @@ p {
 
 #imageBox {
     display: inline-block;
-    width: 750px;
+    width: 450px;
     height: 450px;
     margin: 10px auto 10px 10px;
     overflow: auto;
@@ -14,5 +14,5 @@ p {
     -webkit-box-shadow: #555 0 0 8px;
     -o-box-shadow: #555 0 0 8px;
     box-shadow: #555 0 0 8px;
-    margin-left: 550px;
+    margin-left: 750px;
   }
