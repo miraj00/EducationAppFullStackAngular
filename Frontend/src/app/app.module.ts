@@ -26,6 +26,7 @@ import { ContactComponent } from './contact/contact.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { LightboxModule } from 'ngx-lightbox';
 import { VideosComponent } from './videos/videos.component';
+import { NgOptimizedImage } from '@angular/common';
 
 const routes: Routes = [
   {path:"", component: HomeComponent},
@@ -71,8 +72,8 @@ const routes: Routes = [
     CommonModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    LightboxModule
-   
+    LightboxModule,
+    NgOptimizedImage
   ],
 
   exports: [ RouterModule,  MatButtonModule ],
