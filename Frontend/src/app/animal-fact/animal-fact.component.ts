@@ -25,7 +25,7 @@ export class AnimalFactComponent implements OnInit {
    
     // addAnimal : AnimalDB[] = [];
 
-    Pictures = {} as Photo;
+    Pictures = ({} as any) as Place;
 
 
   constructor(private router: Router, private animalApi : AnimalService, private pictureApi: AnimalService, private saveAnimalApi : AnimalService) {
@@ -47,10 +47,13 @@ export class AnimalFactComponent implements OnInit {
 }
 
 getPicture(){
-  this.pictureApi.GetAnimalPicture(this.animalName).subscribe((result : Photo) => {
+  this.pictureApi.GetAnimalPicture(this.animalName).subscribe((result : Place) => {
     console.log(result);    
     this.Pictures = result;      
-  })}  
+  })
+console.log(this.Pictures);
+
+}  
 
   saveAnimal(i : number) {
 

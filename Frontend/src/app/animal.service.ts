@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Animal } from './animal';
 import { AnimalDB } from './animal';
-import { Photo } from './animalphoto';
+import { Photo, Place } from './animalphoto';
 
 @Injectable({
   providedIn: 'root'
@@ -30,9 +30,9 @@ export class AnimalService {
     return this.http.get<Animal[]>(this.url +animal, { 'headers': this.headers });
   }
 
-  GetAnimalPicture (animal: string) : Observable <Photo> {
-    console.log(this.http.get<Photo>(`${this.url}/${animal}`));
-    return this.http.get<Photo>(this.pictureUrl + animal, { 'headers': this.pictureHeaders });
+  GetAnimalPicture (animal: string) : Observable <Place> {
+    console.log(this.http.get<Place>(`${this.url}/${animal}`));
+    return this.http.get<Place>(this.pictureUrl + animal, { 'headers': this.pictureHeaders });
   }
 
 
