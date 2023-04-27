@@ -12,9 +12,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: indigo;
+    background-color: #42773b;
   }
-  
+ 
   timer {
     margin-right: 10px;
   }
@@ -37,7 +37,8 @@
   
   button {
     padding: 12px 15px;
-    background-color: indigo;
+    background-color: #42773b;
+    ;
     color: #fff;
     border: none;
     border-radius: 0.5em;
