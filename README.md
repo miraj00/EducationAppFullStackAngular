@@ -16,12 +16,21 @@
  If app does not function upon running `ng serve --open `, 
  you may need to run following command on gitBash once you clone the repo  : 
 
+    - npm install
     - npm install --save @angular/material
     - npm install --save @ng-bootstrap/ng-bootstrap
     
 Then Run `ng serve --open ` in a command line to open the project . 
     It will automatically navigate to `http://localhost:4200/`. 
     The application will automatically reload if you change any of the source files.
+
+## For Back-end Database Connection : 
+- add / copy below 3 lines of code in application.properties under src/main/resources   or  create config/application.properties and copy under that for security. Update this with your own IP (if not localhost), schema, and your username and password :
+
+
+- spring.datasource.url=jdbc:mysql://localhost:3306/ add database-name here e.g.(educationdb)?useSSL=false&serverTimezone=America/Detroit
+- spring.datasource.username=root
+- spring.datasource.password=password
 
        
 ## Langauges and Tools Used : 
