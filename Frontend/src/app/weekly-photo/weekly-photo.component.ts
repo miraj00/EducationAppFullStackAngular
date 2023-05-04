@@ -36,7 +36,7 @@ export class WeeklyPhotoComponent {
 		if ( item === 'Trees') {this.x = 61; this.y = 72;}
 		if ( item === 'Birds') {this.x = 73; this.y = 84;}
 		if ( item === 'Waterfalls') {this.x = 85; this.y = 90;}
-		if ( item === 'Fishes') {this.x = 97; this.y = 108;}
+		if ( item === 'Fish') {this.x = 97; this.y = 108;}
 		if ( item === 'Vegetables') {this.x = 109; this.y = 120;}
 
 	  for (let i = this.x; i <= this.y; i++) {
